@@ -2,8 +2,13 @@ include: package:flutter_lints/flutter.yaml
 
 analyzer:
   exclude:
-    # Ignore generated files
+    # Ignore generated and build artifacts
     - '**/*.mocks.dart'
+    - '**/*.g.dart'
+    - '**/*.freezed.dart'
+    - '**/generated_plugin_registrant.dart'
+    - '**/build/**'
+    - '**/.dart_tool/**'
 
 linter:
   rules:
